@@ -18,13 +18,11 @@ public class DizionarioDAO {
 		try {
 		//Connection conn=DriverManager.getConnection(jdbcURL);
 		String sql="SELECT id, nome FROM parola WHERE nome=?";
-		PreparedStatement st=conn.prepareStatement(sql);
-		st.setString(1, nome);
+		PreparedStatement st=conn.prepareStatement(sql);		//creo un oggetto di tipo PreparedStatement
+		st.setString(1, nome);			//setto il primo ? a nome, passato come stringa nel metodo
 		ResultSet rs=st.executeQuery();
-		//so che c'è un unica riga nel dataBase se esiste la parola allooìra inverìce di creare un ciclo while creo un if
 		boolean result;
-		
-		if(rs.next()) {
+		if(rs.next()) {		//Siccome so che, se esiste la parola, c'è un unica riga nel dataBase che soddisfa la query allora, invece di creare un ciclo while, creo un if
 			result= true;
 		}else {
 			result= false;

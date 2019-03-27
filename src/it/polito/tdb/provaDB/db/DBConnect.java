@@ -11,7 +11,7 @@ public class DBConnect {
 	
 	public static Connection getConnection() {
 		
-		String jdbcURL="jdbc:mysql://localhost/dizionario?user=root&password=ulla97";
+		String jdbcURL="jdbc:mysql://localhost/dizionario?user=root&password=ulla97";		//così la psw e l'user non sono visibili nella stessa classe della query
 		
 		try {
 			Connection conn=DriverManager.getConnection(jdbcURL);

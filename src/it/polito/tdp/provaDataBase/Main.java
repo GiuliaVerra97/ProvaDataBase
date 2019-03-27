@@ -54,7 +54,7 @@ public class Main {
 		
 		String parola="gatto";
 		DizionarioDAO dao=new DizionarioDAO();
-				if(dao.esisteParola(parola)) {
+				if(dao.esisteParola(parola)) {		//se non metto ==false oppure ! vuol dire true
 					System.out.format("la parola %s esiste", parola);
 				}else {
 					System.out.format("la parola %s  non esiste", parola);

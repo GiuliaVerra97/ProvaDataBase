@@ -3,7 +3,7 @@ package it.polito.tdp.provaDB.model;
 public class Parola {
 	
 	
-	//creo oggetti per collegare la classe DAO e model
+	//creo degli oggetti per collegare la classe DAO e model
 	
 	private int id;
 	private String nome;
